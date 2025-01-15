@@ -35,7 +35,7 @@ export default function Gallery({ data }) {
   };
 
   return (
-    <div className="flex">
+    <div className="flex mx-auto">
       <div className="flex flex-col gap-4 ml-0  md:ml-4 z-10">
         {data.gallery.map((item, index) => (
           <div

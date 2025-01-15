@@ -57,7 +57,7 @@ export default function CardWrapper({ dataType }) {
                         title={item.title || item.name}
                         description={item.description || null}
                         date={item.date}
-                        image={item.image || "/notImage.webp"}
+                        image={item.image}
                         alt={item.alt || "No description available"}
                         isRehabCenter={dataType === "rehabCenters"}
                       />
@@ -123,7 +123,7 @@ export function Card({ title, description, date, image, alt, isRehabCenter }) {
             alt={alt}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", opacity: image ? 1 : 0.3 }}
             priority
           />
         </div>
