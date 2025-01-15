@@ -1,4 +1,73 @@
-# Proyecto: Réplica de Sitio Web de Recovery Rehab
+
+# Project: Replica of Recovery Rehab Website (English)
+
+Hello! 😊
+
+This is my technical test project where I was asked to replicate a website to evaluate my web development skills. I have replicated three pages from the [Recovery Rehab](https://recoveryrehab.co/) website with a focus on optimization and performance.
+
+## Pages replicated
+
+1. **Landing Page** (without the map section): [https://recoveryrehab.co/](https://recoveryrehab.co/)
+2. **Luxury Rehabs**: [https://recoveryrehab.co/luxury-rehab-centers/](https://recoveryrehab.co/luxury-rehab-centers/)
+3. **Chateau Recovery** (from "Luxury Rehabs"): [https://recoveryrehab.co/luxury-rehab-centers/chateaurecovery/](https://recoveryrehab.co/luxury-rehab-centers/chateaurecovery/)
+
+The main goal is to ensure the site is fast, easy to use, and well-optimized. I hope you like the result! 😊
+
+## Technologies used
+
+- **Next.js**: To create a modern and fast web app.
+- **Tailwind CSS**: For a clean and flexible design without wasting time on CSS.
+- **JavaScript** (without TypeScript): Because I enjoy writing clear and direct code.
+- **React.js**: To create an interactive and dynamic interface.
+
+## What I did
+
+1. **Performance Optimization**:
+   - Ensured that images were optimized for fast loading and good quality.
+   - Used Next.js's `next/image` tool to improve image loading and make sure everything looks great on any device.
+   
+2. **SEO (Search Engine Optimization)**:
+   - Replicated the **title tags** and **meta descriptions** of the original pages to maintain good positioning in Google.
+
+3. **Responsive Design**:
+   - The site adapts perfectly to any device, from mobile phones to large screens. Everything looks great everywhere!
+
+## How to try it out
+
+If you want to see the project in action, just follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lvgarces/recovery-rehab-clone.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the project:
+   ```bash
+   npm run dev
+   ```
+
+4. Done! Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the replica.
+
+## Questions or comments?
+
+This project was created as part of a technical test, but I am always open to suggestions, feedback, or questions. Feel free to reach out!
+
+**Laura Valentina Garces Angel**  
+Frontend Developer
+
+- 📧 Email: [lauraval.garces@gmail.com](mailto:lauraval.garces@gmail.com)  
+- 🔗 LinkedIn: [https://www.linkedin.com/in/laura-valentina-garces-angel/](https://www.linkedin.com/in/laura-valentina-garces-angel/)
+
+Thanks for taking the time to review my work! 😊
+
+---
+
+# Proyecto: Réplica de Sitio Web de Recovery Rehab (Español)
 
 
 ¡Hola! 😊
