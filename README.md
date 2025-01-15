@@ -37,11 +37,11 @@ Si quieres ver el proyecto en acción, solo sigue estos pasos:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/lvgarces/recovery-rehab-clone.git
+   
 Instala las dependencias:
 
 bash
-Copiar código
 npm install
 Ejecuta el proyecto:
 
@@ -54,13 +54,10 @@ npm run dev
 Este proyecto fue creado como parte de una prueba técnica, pero siempre estoy abierta a sugerencias, feedback o preguntas. ¡No dudes en contactarme!
 
 Laura Valentina Garces Angel
-Desarrolladora Full Stack
+Frontend Developer
 
-📧 Email: tu-email@dominio.com
-🔗 LinkedIn: tu-linkedin
+📧 Email: lauraval.garces@gmail.com
+🔗 LinkedIn: [https://www.linkedin.com/in/laura-valentina-garces-angel/](https://www.linkedin.com/in/laura-valentina-garces-angel/)
 ¡Gracias por tomarte el tiempo para revisar mi trabajo! 😊
-
-css
-Copiar código
 
 He mantenido un tono amistoso y directo, con un enfoque más casual, como si estuvieras hablando con alguien a quien le presentas tu proyecto. ¡Espero que te guste!
