@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@googlemaps/react-wrapper": "^1.1.42",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "clsx": "^2.1.1",
@@ -16,11 +18,14 @@
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-lightbox-component": "^1.2.1",
     "use-debounce": "^10.0.4",
     "use-debounced": "^1.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@iconify/json": "^2.2.295",
+    "@iconify/tailwind": "^1.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "postcss": "^8",

@@ -1,3 +1,6 @@
+const { addDynamicIconSelectors } = require('@iconify/tailwind')
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -27,5 +30,5 @@ export default {
       }
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/line-clamp"), addDynamicIconSelectors()],
 };

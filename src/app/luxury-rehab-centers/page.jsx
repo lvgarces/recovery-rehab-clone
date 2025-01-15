@@ -1,30 +1,40 @@
-'use client';
-
-import { useState } from "react";
-import { useDebounce } from "use-debounce";
 import CardWrapper from "@/app/components/card";
 
-export default function Page() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [debouncedQuery] = useDebounce(searchQuery, 1000); // Se espera 1 segundo antes de actualizar el valor
+export const metadata = {
+  // Title metadata
+  title: 'Luxury Rehab Center Archive',
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+   // Description metadata
+  description: 'Explore our collection of luxury rehab centers. Discover high-end treatment options to help you or your loved ones achieve sobriety and wellness in a luxurious setting.',
+
+  // Base URL
+  metadataBase: new URL('https://recoveryrehab.co'),
+
+  // Open Graph / Facebook Meta Tags
+  openGraph: {
+    url: 'https://recoveryrehab.co/luxury-rehab-centers/',
+    type: 'website',
+    title: 'Luxury Rehab Center Archive | Recovery Rehab',
+    description: 'Explore our collection of luxury rehab centers. Discover high-end treatment options to help you or your loved ones achieve sobriety and wellness in a luxurious setting.',
+    image: '', // Puedes añadir una imagen si la tienes
+  },
+
+  // Twitter Meta Tags
+  twitter: {
+    card: 'summary_large_image',
+    domain: 'recoveryrehab.co',
+    url: 'https://recoveryrehab.co/luxury-rehab-centers/',
+    title: 'Luxury Rehab Center Archive | Recovery Rehab',
+    description: 'Explore our collection of luxury rehab centers. Discover high-end treatment options to help you or your loved ones achieve sobriety and wellness in a luxurious setting.',
+    image: '', // Puedes añadir una imagen si la tienes
+  },
+};
+
+export default function Page() {
 
   return (
     <div className="py-10">
-      <div className="flex justify-end items-center my-8">
-        <input
-          type="text"
-          id="search"
-          placeholder="Buscar centro de rehabilitación..."
-          value={searchQuery}
-          onChange={handleSearchChange}
-          className="w-80 py-2 px-4 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
-        />
-      </div>
-      <CardWrapper dataType="rehabCenters" query={debouncedQuery} />
+      <CardWrapper dataType="rehabCenters"/>
     </div>
   );
 }

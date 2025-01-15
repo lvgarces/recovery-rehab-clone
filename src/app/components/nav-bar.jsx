@@ -36,7 +36,7 @@ export default function NavBar() {
           className="flex justify-center items-center"
           href="/"
         >
-          <div className="w-auto text-white px-1 md:w-auto mx-auto my-auto">
+          <div className="hidden md:block w-auto text-white px-1 md:w-auto mx-auto my-auto">
             <RecoveryLogo className="mx-auto my-auto" />
           </div>
         </Link>
