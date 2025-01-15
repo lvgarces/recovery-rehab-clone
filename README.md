@@ -1,5 +1,3 @@
----
-
 # Project: Replica of Recovery Rehab Website (English)
 
 Hello! 😊
