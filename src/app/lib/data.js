@@ -1,4 +1,4 @@
-const BASE_URL = 'https://678529b51ec630ca33a78452.mockapi.io/';
+const BASE_URL = "https://678529b51ec630ca33a78452.mockapi.io/";
 
 /**
  * Fetch all articles.
@@ -13,8 +13,8 @@ export async function fetchArticles() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error fetching articles:', error);
-    throw new Error('Failed to fetch articles.');
+    console.error("Error fetching articles:", error);
+    throw new Error("Failed to fetch articles.");
   }
 }
 
@@ -31,8 +31,8 @@ export async function fetchRehabCenters() {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error fetching rehab centers:', error);
-    throw new Error('Failed to fetch rehab centers.');
+    console.error("Error fetching rehab centers:", error);
+    throw new Error("Failed to fetch rehab centers.");
   }
 }
 
@@ -45,7 +45,9 @@ export async function fetchRehabCenterDetails(centerName) {
   try {
     const response = await fetch(`${BASE_URL}rehabCenter`);
     if (!response.ok) {
-      throw new Error(`Failed to fetch rehab center details: ${response.statusText}`);
+      throw new Error(
+        `Failed to fetch rehab center details: ${response.statusText}`
+      );
     }
     const data = await response.json();
 

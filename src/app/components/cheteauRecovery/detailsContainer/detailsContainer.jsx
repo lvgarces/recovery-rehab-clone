@@ -1,9 +1,4 @@
-"use client";
 
-import { useState, useEffect } from "react";
-import { fetchArticles, fetchRehabCenters } from "@/app/lib/data";
-import Image from "next/image";
-import Link from "next/link";
 import About from "./about";
 import GeneralInfo from "./generalInfo";
 import Resources from "./resources";
@@ -18,7 +13,10 @@ export default function DetailsContainer({ data }) {
       <div className="w-full border-0 pr-2 md:w-[70%] md:border-r  border-gray-200 md:pr-10">
         <GeneralInfo data={data.generalInfo} />
         <BulletpointsList type={"Highlights"} data={data.highlights} />
-        <BulletpointsList type={"Treatment programs and services"} data={data.treatmentPrograms} />
+        <BulletpointsList
+          type={"Treatment programs and services"}
+          data={data.treatmentPrograms}
+        />
         <BulletpointsList type={"What we treat"} data={data.whatWeTreat} />
         <About data={data.about} />
         <Resources data={data.resources} />
