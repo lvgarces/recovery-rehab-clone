@@ -7,7 +7,7 @@ import { EnvelopeOpenIcon } from "@heroicons/react/24/solid";
 
 export default function NavBar() {
   return (
-    <div className="shadow-md">
+    <div className="shadow-md max-w-[1140px] mx-auto">
       {/* Header */}
       <div
         className={` flex bg-tarawera px-10 py-2 ${alata.className} justify-between md: flex-wrap justify-center mx-auto align-middle`}

@@ -1,6 +1,7 @@
 import { jost } from "@/app/components/fonts";
 import "./globals.css";
 import NavBar from "@/app/components/nav-bar";
+import Footer from "@/app/components/footer";
 import { Suspense } from "react";
 import Loading from "./loading";
 
@@ -42,9 +43,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased max-w-[1140px] mx-auto`}>
+      <body className={`${jost.className} antialiased `}>
         <NavBar />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Suspense fallback={<Loading />}>
+          <div className="max-w-[1140px] mx-auto">{children}</div>
+        </Suspense>
+        <Footer />
       </body>
     </html>
   );
