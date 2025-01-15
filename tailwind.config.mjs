@@ -18,6 +18,8 @@ export default {
         'roman': '#e05f5f',
         'customgray': '#c5c5c5',
         'gray1': '#696969',
+        'customBlack': '#03181b',
+        'customgray2': '#FFFFFF8A',
       },
       fontSize: {
         sm: '0.8rem',

@@ -133,6 +133,7 @@ export function Card({ title, description, date, image, alt, isRehabCenter }) {
           alt={alt}
           width={500}
           height={500}
+          style={{width: "100%", height: "auto"}}
           priority
         />
       )}
