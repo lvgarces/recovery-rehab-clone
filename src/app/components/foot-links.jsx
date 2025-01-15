@@ -26,7 +26,7 @@ export default function FootLinks() {
           <Link
             key={link.name}
             href={link.href}
-            className="relative flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-customBlack p-3 text-sm font-medium text-white md:flex-none md:justify-start md:p-2 md:px-3 group"
+            className="relative flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-[#03181b] p-3 text-sm font-medium text-white md:flex-none md:justify-start md:p-2 md:px-3 group"
           >
             <p className={`${alata.className}`}>{link.name}</p>
             <span
