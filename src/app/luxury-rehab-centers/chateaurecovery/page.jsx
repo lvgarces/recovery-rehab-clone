@@ -47,7 +47,7 @@ export default async function Page() {
         <ContactBanner data={data} />
         <DetailsContainer data={data} />
       </div>
-      <div className="flex w-full mx-auto md:w-[20%] mt-4 md:mt-0 mx-auto">
+      <div className="flex w-full mx-auto md:w-[25%] mt-4 md:mt-0">
         <Gallery data={data} />
       </div>
     </div>

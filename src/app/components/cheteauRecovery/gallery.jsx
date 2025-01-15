@@ -35,14 +35,13 @@ export default function Gallery({ data }) {
   };
 
   return (
-    <div className="relative">
-      <div className="flex flex-col gap-4 absolute left-0 top-0  ml-4 z-10">
+    <div className="flex">
+      <div className="flex flex-col gap-4 ml-0  md:ml-4 z-10">
         {data.gallery.map((item, index) => (
           <div
             key={index}
-            className="relative group cursor-pointer"
+            className="relative group cursor-pointer w-[300px] h-[160px] sm:w-[600px] sm:h-[390px] md:w-[200px] md:h-[130px]"
             onClick={() => openModal(index)}
-            style={{ width: "200px", height: "130px" }}
           >
             {/* Image container */}
             <div className="relative w-full h-full overflow-hidden rounded-lg">
@@ -67,7 +66,7 @@ export default function Gallery({ data }) {
           </div>
         ))}
       </div>
-
+        <div className="relative">
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <button
@@ -109,6 +108,7 @@ export default function Gallery({ data }) {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }

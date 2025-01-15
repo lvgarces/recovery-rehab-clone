@@ -23,7 +23,7 @@ export default function GeneralInfo({ data }) {
           width={14}
           height={14}
         />
-        <p> {data.accreditation}</p>
+        <p>Accreditation: {data.accreditation}</p>
       </div>
       <div className="flex mb-3">
         <UserIcon
@@ -31,7 +31,7 @@ export default function GeneralInfo({ data }) {
           width={14}
           height={14}
         />
-        <p> {data.servicesFor}</p>
+        <p>Services For: {data.servicesFor}</p>
       </div>
     </div>
   );
