@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { fetchArticles, fetchRehabCenters } from '@/app/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -38,7 +38,7 @@ export default function CardWrapper({ dataType }) {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div>
+    <Suspense fallback={<Loading />}>
       {/* Mostrar el loading mientras los datos se cargan */}
       {loading ? (
 
@@ -103,7 +103,7 @@ export default function CardWrapper({ dataType }) {
           )}
         </>
       )}
-    </div>
+    </Suspense>
   );
 }
 
@@ -115,12 +115,14 @@ export function Card({ title, description, date, image, alt, isRehabCenter }) {
           <Image
             src={image ? image : '/notImage.webp'}
             alt={alt}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: 'cover' }}
+            priority
           />
         </div>
       ) : (
-        <Image src={image ? image : '/notImage.webp'} alt={alt} width={500} height={500} />
+        <Image src={image ? image : '/notImage.webp'} alt={alt} width={500} height={500} priority />
       )}
 
       <div className={`flex flex-col  ${isRehabCenter ? 'justify-start' : 'justify-between'}  px-6 pt-2 ${isRehabCenter ? '' : 'h-full'}`}>

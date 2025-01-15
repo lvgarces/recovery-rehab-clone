@@ -1,7 +1,6 @@
 'use client';
 
 export default function HeroSection({ data }) {
-  console.log("Dataaaaaaa: ", data.name);
 
   return (
     <div className="relative h-[161px]  flex items-center justify-start overflow-hidden">

@@ -11,7 +11,6 @@ export async function fetchArticles() {
       throw new Error(`Failed to fetch articles: ${response.statusText}`);
     }
     const data = await response.json();
-    console.log('Fetched articles:', data);
     return data;
   } catch (error) {
     console.error('Error fetching articles:', error);
@@ -30,7 +29,6 @@ export async function fetchRehabCenters() {
       throw new Error(`Failed to fetch rehab centers: ${response.statusText}`);
     }
     const data = await response.json();
-    console.log('Fetched rehab centers:', data);
     return data;
   } catch (error) {
     console.error('Error fetching rehab centers:', error);
@@ -56,8 +54,6 @@ export async function fetchRehabCenterDetails(centerName) {
     if (!center) {
       throw new Error(`Rehab center with name "${centerName}" not found.`);
     }
-
-    console.log(`Details for ${centerName}:`, center.details);
     return center.details;
   } catch (error) {
     console.error(`Error fetching details for ${centerName}:`, error);

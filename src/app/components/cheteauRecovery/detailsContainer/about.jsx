@@ -10,15 +10,17 @@ export default function About({ data }) {
 
   if (!aboutContent) return <p>No content available</p>;
 
-  // Función para reemplazar las etiquetas <a> por Link de Next.js y eliminar los estilos innecesarios
+  // Función para reemplazar las etiquetas <a> por componentes Link de Next.js
   const replaceLinks = (htmlContent) => {
     return htmlContent.replace(/<a\s+href="([^"]+)"[^>]*>(.*?)<\/a>/g, (match, url, text) => {
-      return `<Link href="${url}" passHref><a class="text-[#007BA7] cursor-pointer hover:underline">${text}</a></Link>`;
+      return `<a href="${url}" class="text-[#007BA7] cursor-pointer hover:underline">${text}</a>`;
     });
   };
 
-  const styledContent = replaceLinks(aboutContent)
-    .replace(/<img/g, '<img class="rounded-lg my-4 max-w-full"');  // Estilo para las imágenes
+  const styledContent = replaceLinks(aboutContent).replace(
+    /<img/g,
+    '<img class="rounded-lg my-4 max-w-full"'
+  ); // Estilo para las imágenes
 
   return (
     <div>

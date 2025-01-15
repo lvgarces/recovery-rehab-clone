@@ -10,7 +10,6 @@ import Resources from "./resources";
 import BulletpointsList from "./bulletpointsList";
 
 export default function DetailsContainer({ data }) {
-  console.log("Dataaaaaaa: ", data.name);
   const aboutContent = data.about.content;
 
   if (!aboutContent) return <p>No content available</p>;

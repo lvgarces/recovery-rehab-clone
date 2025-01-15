@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto: Réplica de Sitio Web de Recovery Rehab
 
-## Getting Started
+¡Hola! 😊
 
-First, run the development server:
+Este es mi proyecto de prueba técnica donde me propusieron replicar un sitio web con el fin de evaluar mis conocimientos en desarrollo web. He replicado tres páginas del sitio [Recovery Rehab](https://recoveryrehab.co/) con un enfoque en optimización y buen rendimiento.
 
-```bash
+## Páginas replicadas
+
+1. **Landing Page** (sin la sección del mapa): [https://recoveryrehab.co/](https://recoveryrehab.co/)
+2. **Luxury Rehabs**: [https://recoveryrehab.co/luxury-rehab-centers/](https://recoveryrehab.co/luxury-rehab-centers/)
+3. **Chateau Recovery** (proveniente de "Luxury Rehabs"): [https://recoveryrehab.co/luxury-rehab-centers/chateaurecovery/](https://recoveryrehab.co/luxury-rehab-centers/chateaurecovery/)
+
+La idea principal es que el sitio sea rápido, fácil de usar y bien optimizado. ¡Espero que te guste el resultado! 😊
+
+## Tecnologías que usé
+
+- **Next.js**: Para crear una app web moderna y rápida.
+- **Tailwind CSS**: Para un diseño limpio y flexible sin perder tiempo con CSS.
+- **JavaScript** (sin TypeScript): Porque me gusta escribir código directo y claro.
+- **React.js**: Para crear una interfaz interactiva y dinámica.
+
+## Lo que hice
+
+1. **Optimización de rendimiento**:
+   - Aseguré que las imágenes estuvieran optimizadas para carga rápida y buena calidad.
+   - Usé la herramienta `next/image` de Next.js para mejorar la carga de imágenes y asegurar que todo se vea genial en cualquier dispositivo.
+   
+2. **SEO (Optimización en motores de búsqueda)**:
+   - Repliqué los **title tags** y **meta descriptions** de las páginas originales para mantener un buen posicionamiento en Google.
+
+3. **Diseño responsivo**:
+   - El sitio se adapta perfectamente a cualquier dispositivo, desde móviles hasta pantallas grandes. ¡Todo se ve genial en cualquier lugar!
+
+## Cómo probarlo
+
+Si quieres ver el proyecto en acción, solo sigue estos pasos:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+Instala las dependencias:
+
+bash
+Copiar código
+npm install
+Ejecuta el proyecto:
+
+bash
+Copiar código
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+¡Listo! Abre tu navegador y ve a http://localhost:3000 para ver la réplica.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+¿Comentarios o dudas?
+Este proyecto fue creado como parte de una prueba técnica, pero siempre estoy abierta a sugerencias, feedback o preguntas. ¡No dudes en contactarme!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Laura Valentina Garces Angel
+Desarrolladora Full Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📧 Email: tu-email@dominio.com
+🔗 LinkedIn: tu-linkedin
+¡Gracias por tomarte el tiempo para revisar mi trabajo! 😊
 
-## Learn More
+css
+Copiar código
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+He mantenido un tono amistoso y directo, con un enfoque más casual, como si estuvieras hablando con alguien a quien le presentas tu proyecto. ¡Espero que te guste!
