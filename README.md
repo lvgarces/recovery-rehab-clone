@@ -1,3 +1,5 @@
+---
+
 # Project: Replica of Recovery Rehab Website (English)
 
 Hello! 😊
@@ -20,6 +22,8 @@ The main goal is to ensure the site is fast, easy to use, and well-optimized. I 
 - **Tailwind CSS**: For a clean and flexible design without wasting time on CSS.
 - **JavaScript** (without TypeScript): Because I enjoy writing clear and direct code.
 - **React.js**: To create an interactive and dynamic interface.
+- **API**: I created a custom API to consume data efficiently and save resources. This approach ensures scalability and performance, especially for dynamic content like blog posts or service information.
+- **Google Maps**: Initially, I wanted to use Google Maps API for interactive map integration. However, I faced some issues with Google Cloud, and I couldn't obtain a Google Maps API key in time. As a result, I decided to embed the map directly using an iframe from the original page.
 
 ## What I did
 
@@ -27,10 +31,13 @@ The main goal is to ensure the site is fast, easy to use, and well-optimized. I 
    - Ensured that images were optimized for fast loading and good quality.
    - Used Next.js's `next/image` tool to improve image loading and make sure everything looks great on any device.
    
-2. **SEO (Search Engine Optimization)**:
+2. **API for Data Fetching**:
+   - I created an API to handle data fetching efficiently, so that pages could load with minimal resource consumption. This was particularly useful when dealing with large datasets like service listings or blog posts.
+   
+3. **SEO (Search Engine Optimization)**:
    - Replicated the **title tags** and **meta descriptions** of the original pages to maintain good positioning in Google.
 
-3. **Responsive Design**:
+4. **Responsive Design**:
    - The site adapts perfectly to any device, from mobile phones to large screens. Everything looks great everywhere!
 
 ## How to try it out
@@ -90,6 +97,8 @@ La idea principal es que el sitio sea rápido, fácil de usar y bien optimizado.
 - **Tailwind CSS**: Para un diseño limpio y flexible sin perder tiempo con CSS.
 - **JavaScript** (sin TypeScript): Porque me gusta escribir código directo y claro.
 - **React.js**: Para crear una interfaz interactiva y dinámica.
+- **API**: Creé una API personalizada para consumir los datos de manera eficiente y ahorrar recursos. Esto garantiza escalabilidad y rendimiento, especialmente para contenido dinámico como entradas de blog o información de servicios.
+- **Google Maps**: Inicialmente, quería usar la API de Google Maps para la integración interactiva del mapa. Sin embargo, tuve algunos problemas con Google Cloud y no pude obtener una clave de API de Google Maps a tiempo. Como solución, decidí pegar el mapa directamente usando un iframe de la página original.
 
 ## Lo que hice
 
@@ -97,10 +106,13 @@ La idea principal es que el sitio sea rápido, fácil de usar y bien optimizado.
    - Aseguré que las imágenes estuvieran optimizadas para carga rápida y buena calidad.
    - Usé la herramienta `next/image` de Next.js para mejorar la carga de imágenes y asegurar que todo se vea genial en cualquier dispositivo.
    
-2. **SEO (Optimización en motores de búsqueda)**:
+2. **API para obtener los datos**:
+   - Creé una API para manejar la obtención de datos de manera eficiente, lo que permitió que las páginas se cargaran con un consumo mínimo de recursos. Esto fue especialmente útil al tratar con grandes volúmenes de datos, como listados de servicios o entradas de blog.
+
+3. **SEO (Optimización en motores de búsqueda)**:
    - Repliqué los **title tags** y **meta descriptions** de las páginas originales para mantener un buen posicionamiento en Google.
 
-3. **Diseño responsivo**:
+4. **Diseño responsivo**:
    - El sitio se adapta perfectamente a cualquier dispositivo, desde móviles hasta pantallas grandes. ¡Todo se ve genial en cualquier lugar!
 
 ## Cómo probarlo
