@@ -10,9 +10,9 @@ export default function NavBar() {
     <div className="shadow-md max-w-[1140px] mx-auto">
       {/* Header */}
       <div
-        className={` flex bg-tarawera px-10 py-2 ${alata.className} justify-between md: flex-wrap justify-center mx-auto align-middle`}
+        className={` flex bg-tarawera px-2 py-4 md:px-10 md:py-2 ${alata.className} justify-between md: flex-wrap justify-center mx-auto align-middle`}
       >
-        <div className="flex text-white text-sm ml-0 md: mx-auto">
+        <div className="flex text-white text-sm mx-auto md:ml-0 ">
           <div className="flex px-1">
             <QuestionMarkCircleIcon
               className="text-roman my-auto"
@@ -30,8 +30,8 @@ export default function NavBar() {
             <p className="my-auto pl-2"> contact@recoveryrehab.co</p>
           </div>
         </div>
-        <div className="flex text-customgray text-sm mr-0 md: mx-auto ">
-          <Link className="px-5 md: px-2 " href="/">
+        <div className="flex text-customgray text-sm mx-auto pt-2 md:mr-0  md:pt-0 ">
+          <Link className="px-2 md:px-5" href="/">
             Contact Us
           </Link>
           <Link className="px-5 md: px-2" href="/">
